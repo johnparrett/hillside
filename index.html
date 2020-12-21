@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <title>Hillside Commerce LTD</title>
+
+    <style>
+
+        header {
+            border-bottom: 1px solid black;
+            height: 6rem;
+            width: 100%;
+            position: fixed;
+            display: inline-flex;
+            align-items: center;
+            z-index: 2;
+            background-color: white;
+            overflow: hidden;
+            top: 0;
+        }
+
+        .guide {
+            list-style-type: none;
+            display: inline-flex;
+        }
+
+        .guide li {
+            margin-left: 8px;
+            margin-right: 8px;
+        }
+
+        .banner-menu {
+            position: absolute;
+            right: 1rem;
+            margin-top: 2.75rem;
+            margin-bottom: 2rem;
+        }
+
+        .logo {
+            height: 4rem;
+            position: relative;
+            left: 1rem;
+            cursor: default;
+        }
+
+        .btn {
+            background: white;
+            background-image: -webkit-linear-gradient(top, red, #680000);
+            background-image: -moz-linear-gradient(top, red, #680000);
+            background-image: -ms-linear-gradient(top, red, #680000);
+            background-image: -o-linear-gradient(top, red, #680000);
+            background-image: linear-gradient(to bottom, red, #680000);
+            color: white;
+            font-size: 20px;
+            padding: 5px 10px 5px 10px;
+            text-decoration: none;
+            margin-left: .5rem;
+            margin-right: .5rem;
+        }
+        
+        .btn:hover {
+            color: white;
+            background-image: -webkit-linear-gradient(top, #680000, red);
+            background-image: -moz-linear-gradient(top, #680000, red);
+            background-image: -ms-linear-gradient(top, #680000, red);
+            background-image: -o-linear-gradient(top, #680000, red);
+            background-image: linear-gradient(to bottom, #680000, red);
+            text-decoration: none;
+        }
+
+        .btn:focus {
+            color: white;
+        }
+        
+        .logo-img {
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            
+            height: auto;
+        }
+        
+        .jumbotron {
+            margin-bottom: 0;
+            background-color: #A0A0A0;
+            margin-top: 6rem;
+        }
+
+        #landing {
+            width: 90%;
+            margin: 0 auto;
+        }
+
+        .pr-2 {
+            padding-right: 2rem;
+        }
+        
+        .mr-3 {
+            margin-right: 3rem;
+        }
+
+        #nav-button {
+            list-style: none;
+            display: flex;
+        }
+
+        .pl-2 {
+            padding-left: 2rem;
+        }
+
+        footer {
+            background-color: red;
+            color: white;
+            left: 0;
+            border-top: 1px solid black;
+
+        }
+
+        .pb-1 {
+            padding-bottom: 1rem;
+        }
+
+        .pt-1 {
+            padding-top: 1rem;
+        }
+
+        .grid-container {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            margin: 0 auto;
+            text-align: center;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            padding-bottom: 12rem;
+            padding-top: 3rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-template-rows: 1fr;
+            gap: 0 1rem;
+            grid-template-areas:
+                "dryers vacuum sanitizer";
+        }
+
+        .dryers { 
+            grid-area: dryers; 
+        }
+
+        .vacuum { 
+            grid-area: vacuum; 
+        }
+
+        .sanitizer { 
+            grid-area: sanitizer; 
+        }
+
+        .w-75 {
+            width: 75%;
+            margin: 0 auto;
+        }
+        
+        .address {
+            text-align: center;
+            padding-top: 3rem;
+            padding-bottom: 3rem;
+            background-image: url('https://img.freepik.com/free-vector/elegant-white-background-with-shiny-lines_1017-17580.jpg?size=626&ext=jpg');
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media only screen and (max-width: 800px) {
+
+            .logo-img {
+                width: 40%;
+            }
+
+            .grid-container {
+            border-top: 1px solid black;
+            border-bottom: 1px solid black;
+            margin: 0 auto;
+            text-align: center;
+            padding-left: 2rem;
+            padding-bottom: 6rem;
+            padding-top: 3rem;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 0 1rem;
+            grid-template-areas:
+                "dryers"
+                "vacuum"
+                "sanitizer";
+            }
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <header class="flex-container">
+        <div>
+            <img class="logo" src="assets/LogoMakr-9YZtjw.png" alt="logo" />
+        </div>
+        <nav class="banner-menu">
+            <ul class="guide">
+                <a class="btn" href="#top"><li>Home</li></a>
+                <a class="btn" href="#contact"><li>Contact Us</li></a>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="#top" class="jumbotron text-center">
+            <img class="logo-img" src="assets/LogoMakr-9YZtjw.png" alt="logo" />
+            <div id="landing">
+                <h1>Welcome to<br>Hillside Commerce LTD</h1>
+                <p>Hillside Commerce LTD is an Independent family run business built on great customer service established in 2016.</p>
+            </div>
+        </div>
+        
+        <div class="grid-container">
+            <div class="dryers">
+                <a href="https://www.hillsidehanddryers.com/" target="_blank"><img style="margin-top: 5.5rem; padding-bottom: 5.5rem;" src="assets/Hillside Hand Dryers Logo.jpg" alt="Hand Dryer"></a>
+                <h2>Hillside Hand Dryers</h2>
+                <p class="w-75">The number 1 independent Dyson Airblade Dryer Speacialists</p>
+            </div>
+                <div class="vacuum">
+                <a  href="https://www.vacuumwizard.com/" target="_blank"><img src="assets/The Vacuum Wizard - Awarded-01 copy 3.png" alt="Vacuum Wizard"></a>
+                <h2>The Vacuum Wizard</h2>
+                <p class="w-75">The number 1 independent Dyson Hand Held Vacuum Specialists</p>
+            </div>
+            <div class="sanitizer">
+                <a href="https://handstations.co.uk/" target="_blank"><img style="margin-top: 8.25rem; padding-bottom: 7.75rem;" src="assets/HandStation1-08.png" width="275" alt="Hand Stations"></a>
+                <h2>Hand Stations</h2>
+                <p class="w-75">The number 1 Auotmatic Hand Sanitiser Dispenser Supplier in the United Kingdom</p>
+            </div>
+        </div>
+        
+        <div class="address">
+            <h4>Hillside Commerce LTD Unit 12 Rockhill Estate, Wellsway, Keynsham, Bristol, BS31 1PF United Kingdom</h4>
+            <br>
+            <h5 id="contact">Questions? Contact us:</h5>
+            <div>
+                <a href="mailto:info@hillsidecommerce-co-uk"><button class="btn"><i class="fas fa-envelope pr-2"></i>info@hillsidecommerce-co-uk</button></a>
+                <br>
+                <br>
+                <a href="tel:03333-701-701"><button class="btn"><i class="fas fa-phone-alt pr-2"></i>03333 701 701</button></a>
+            </div>
+        </div>
+        
+    </main>
+       
+    <footer class="bg-light text-center text-lg-start pl-2 pb-1 pt-1">
+    
+        <div class="container p-4">
+            <div class="row">
+                <div class="col-lg-6 col-md-12 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Hillside Commerce LTD Registered in the UK.</h5>
+                </div>
+       
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase">Registration No: 10057594</h5>
+                </div>
+        
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+                    <h5 class="text-uppercase mb-0">VAT Number: GB259821374</h5>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
